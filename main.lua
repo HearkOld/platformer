@@ -8,7 +8,7 @@ require "player"
 -- Main
 
 function love.load()
-love.graphic.getBackgroundColor(255, 255, 255)
+love.graphics.getBackgroundColor(255, 255, 255)
 -- Loading Classes
 player.load()
 end
