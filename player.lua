@@ -16,3 +16,10 @@ function player.draw()
   love.graphics.setColor(100, 0, 0)
   love.graphics.rectangle("line",player.x,player.y,player.width,player.height)
 end
+
+function UPDATE_PLAYER(dt)
+  
+end
+function DRAW_PLAYER()
+  player.draw()
+end
