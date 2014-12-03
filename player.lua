@@ -1,5 +1,6 @@
 player = {}
-
+-- Player Image
+playerp = love.graphics.newImage("player.png")
 function player.load()
   player.x = 5
   player.y = 5
@@ -11,10 +12,11 @@ function player.load()
   player.height = 50
 end
 function player.draw()
-  love.graphics.setColor(100, 0, 0)
-  love.graphics.rectangle("fill",player.x,player.y,player.width,player.height)
-  love.graphics.setColor(100, 0, 0)
-  love.graphics.rectangle("line",player.x,player.y,player.width,player.height)
+-- love.graphics.setColor(100, 0, 0)
+-- love.graphics.rectangle("fill",player.x,player.y,player.width,player.height)
+--  love.graphics.setColor(100, 0, 0)
+--  love.graphics.rectangle("line",player.x,player.y,player.width,player.height)
+love.graphics.draw(whale, 300, 200)
 end
 
 function player.physics(dt)
