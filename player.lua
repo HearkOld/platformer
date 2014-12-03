@@ -16,7 +16,7 @@ function player.draw()
 -- love.graphics.rectangle("fill",player.x,player.y,player.width,player.height)
 --  love.graphics.setColor(100, 0, 0)
 --  love.graphics.rectangle("line",player.x,player.y,player.width,player.height)
-love.graphics.draw(playerp, 300, 200)
+love.graphics.draw(playerp, player.width,player.height))
 end
 
 function player.physics(dt)
