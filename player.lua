@@ -7,4 +7,12 @@ function player.load()
   player.yvel = 0
   player.friction = 7
   player.speed = 2250
+  player.width = 50
+  player.height = 50
+end
+function player.draw()
+  love.graphics.setColor(100, 0, 0)
+  love.graphics.rectangle("fill",player.x,player.y,player.width,player.height)
+  love.graphics.setColor(100, 0, 0)
+  love.graphics.rectangle("line",player.x,player.y,player.width,player.height)
 end
