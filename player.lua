@@ -17,6 +17,11 @@ function player.draw()
   love.graphics.rectangle("line",player.x,player.y,player.width,player.height)
 end
 
+function player.physics(dt)
+  player.x = player.x + player.xvel * dt
+  player.y = player.y + player.yvel * dt
+  player.xvel = player.xvel * (1 - math.min(dt*player.friction,1))
+
 function UPDATE_PLAYER(dt)
   
 end
